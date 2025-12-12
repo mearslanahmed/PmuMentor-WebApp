@@ -3,44 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PmuMentor - Create Event</title>
+<title>Create Event</title>
 <link rel="stylesheet" href="create-event.css">
 </head>
 <body>
-<nav>
-    <div class="logo">PmuMentor</div>
-    <div class="nav-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="#">Events</a>
-        <a href="#">Resources</a>
-        <a href="#">Profile</a>
-        <a href="#">Logout</a>
-    </div>
-</nav>
-
 <div class="container">
-    <h2>Create New Event</h2>
-    <form>
-        <label for="title">Event Title</label><br>
-        <input type="text" id="title" placeholder="Enter event title" required><br>
+    <h2>Create Event</h2>
+    <form id="eventForm">
+        <label>Title</label><br>
+        <input type="text" id="title" required><br>
 
-        <label for="type">Event Type</label><br>
+        <label>Type</label><br>
         <select id="type" required>
-            <option value="virtual">Virtual</option>
-            <option value="in-person">In-person</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Webinar">Webinar</option>
+            <option value="Seminar">Seminar</option>
         </select><br>
 
-        <label for="date">Date</label><br>
+        <label>Date</label><br>
         <input type="date" id="date" required><br>
 
-        <label for="time">Time</label><br>
+        <label>Time</label><br>
         <input type="time" id="time" required><br>
 
-        <label for="description">Description</label><br>
-        <textarea id="description" placeholder="Enter event details" rows="4" required></textarea><br>
+        <label>Description</label><br>
+        <textarea id="description" rows="4" required></textarea><br>
 
         <button type="submit">Create Event</button>
     </form>
 </div>
+<script src="create-event.js"></script>
 </body>
 </html>
