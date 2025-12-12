@@ -3,43 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PmuMentor - Upload Resource</title>
+<title>Upload Resource</title>
 <link rel="stylesheet" href="upload-resource.css">
 </head>
 <body>
-<nav>
-    <div class="logo">PmuMentor</div>
-    <div class="nav-links">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="create-event.html">Events</a>
-        <a href="#">Resources</a>
-        <a href="profile.html">Profile</a>
-        <a href="#">Logout</a>
-    </div>
-</nav>
-
 <div class="container">
-    <h2>Upload New Resource</h2>
-    <form>
-        <label for="title">Resource Title</label><br>
-        <input type="text" id="title" placeholder="Enter resource title" required><br>
+    <h2>Upload Resource</h2>
+    <form id="resourceForm">
+        <label>Title</label><br>
+        <input type="text" id="title" required><br>
 
-        <label for="type">Resource Type</label><br>
+        <label>Type</label><br>
         <select id="type" required>
-            <option value="study-guide">Study Guide</option>
-            <option value="article">Article</option>
-            <option value="tutorial">Tutorial</option>
-            <option value="internship-info">Internship Info</option>
+            <option value="Study Guide">Study Guide</option>
+            <option value="Article">Article</option>
+            <option value="Tutorial">Tutorial</option>
+            <option value="Internship Info">Internship Info</option>
         </select><br>
 
-        <label for="file">Choose File</label><br>
-        <input type="file" id="file" required><br>
+        <label>File</label><br>
+        <input type="file" id="file"><br>
 
-        <label for="description">Description</label><br>
-        <textarea id="description" placeholder="Enter resource description" rows="4" required></textarea><br>
+        <label>Description</label><br>
+        <textarea id="description" rows="4" required></textarea><br>
 
         <button type="submit">Upload Resource</button>
     </form>
 </div>
+<script src="upload-resource.js"></script>
 </body>
 </html>
