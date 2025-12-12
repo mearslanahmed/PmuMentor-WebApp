@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PmuMentor - Create Event</title>
+<link rel="stylesheet" href="create-event.css">
+</head>
+<body>
+<nav>
+    <div class="logo">PmuMentor</div>
+    <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Events</a>
+        <a href="#">Resources</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Create New Event</h2>
+    <form>
+        <label for="title">Event Title</label><br>
+        <input type="text" id="title" placeholder="Enter event title" required><br>
+
+        <label for="type">Event Type</label><br>
+        <select id="type" required>
+            <option value="virtual">Virtual</option>
+            <option value="in-person">In-person</option>
+        </select><br>
+
+        <label for="date">Date</label><br>
+        <input type="date" id="date" required><br>
+
+        <label for="time">Time</label><br>
+        <input type="time" id="time" required><br>
+
+        <label for="description">Description</label><br>
+        <textarea id="description" placeholder="Enter event details" rows="4" required></textarea><br>
+
+        <button type="submit">Create Event</button>
+    </form>
+</div>
+</body>
+</html>
