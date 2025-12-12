@@ -1,8 +1,0 @@
-body { font-family: Arial; background-color: #f4f4f4; margin:0; }
-nav { background: #007BFF; padding: 15px 20px; display: flex; justify-content: space-between; color: white; }
-nav a { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; }
-nav a:hover { text-decoration: underline; }
-.container { max-width: 600px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-h2 { text-align: center; color: #28a745; }
-ul { list-style-type: none; padding-left: 0; }
-ul li { background: #f1f1f1; margin: 5px 0; padding: 10px; border-radius: 5px; }
